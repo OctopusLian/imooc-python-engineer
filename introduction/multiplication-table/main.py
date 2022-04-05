@@ -71,3 +71,12 @@ two = keys[1]
 two_value = work.pop(two)
 print('{} * {} = {}'.format(two,two_value[0],int(two) * two_value[0]))
 print('{} * {} = {}'.format(two,two_value[1],int(two) * two_value[1]))
+
+three = keys[2]
+three_value = work.pop(three)
+print('{} * {} = {}'.format(three,three_value[0],int(two) * three_value[0]))
+print('{} * {} = {}'.format(three,three_value[1],int(two) * three_value[1]))
+print('{} * {} = {}'.format(three,three_value[2],int(two) * three_value[2]))
+
+four = keys[3]
+four_value = work.pop(four)
