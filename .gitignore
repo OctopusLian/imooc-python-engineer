@@ -1,0 +1,6 @@
+*.vscode/
+*.idea/
+*.pyc
+*.out
+*.exe
+*.class
