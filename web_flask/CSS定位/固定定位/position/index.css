@@ -1,0 +1,21 @@
+.div1{
+	width: 5%;
+	height: 100px;
+	position: fixed;
+	top:200px;
+	left: 2%;
+	background-color: yellow;
+}
+.div2{
+	width: 80%;
+	position: relative;
+	left: 10%;
+}
+.div3{
+	width: 5%;
+	height: 100px;
+	position: fixed;
+	top:200px;
+	right: 2%;
+	background-color: yellow;
+}

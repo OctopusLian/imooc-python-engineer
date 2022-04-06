@@ -1,0 +1,18 @@
+/*子孙选择器*/
+/*#div1 p{
+	color: red;
+}*/
+/*子选择器*/
+/*#div1>p{
+	color:red;
+}*/
+
+/*相邻兄弟选择器*/
+/*#div2+div{
+	color: red;
+}*/
+
+/*属性选择器*/
+p[class="p1"]{
+	color:red;
+}

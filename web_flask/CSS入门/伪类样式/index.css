@@ -1,0 +1,25 @@
+a:link{
+	color:red;
+}
+a:visited{
+	color: green;
+}
+a:hover{
+	color: yellow;
+	font-size: 30px;
+}
+a:active{
+	color:blue;
+}
+label:hover{
+	color:red;
+}
+input:hover{
+	background-color: red;
+}
+input:active{
+	background-color: blue;
+}
+input:focus{
+	background-color: yellow;
+}

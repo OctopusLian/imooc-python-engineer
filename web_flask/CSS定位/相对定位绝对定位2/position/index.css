@@ -1,0 +1,22 @@
+div{
+	width: 100px;
+	height: 100px;
+}
+.div1{
+	background-color: red;
+	left: 200px;
+	top:10px;
+	position: absolute;
+}
+.div2{
+	background-color: green;
+	left: 250px;
+	top:20px;
+	position: absolute;
+}
+.div3{
+	background-color: blue;
+	left: 300px;
+	top:30px;
+	position: absolute;
+}

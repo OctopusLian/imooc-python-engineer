@@ -1,0 +1,15 @@
+p{
+	background-color: red;
+	font-size: 40px;
+}
+.p1{
+	font-family: 隶书;
+}
+body{
+	/*background-color:yellow;
+	background-image: url("image/wudaojiaoshi.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 20px 30px;*/
+	background:yellow url("image/wudaojiaoshi.jpg") no-repeat fixed 30px 40px;
+}

@@ -1,0 +1,7 @@
+p:nth-child(2){
+	background-color: red;
+}
+
+td:nth-last-child(2){
+	background-color: red;
+}
