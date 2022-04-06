@@ -4,5 +4,5 @@
 *.out
 *.exe
 *.class
-*__pycache__/
+*__pycache__*
 *.log
