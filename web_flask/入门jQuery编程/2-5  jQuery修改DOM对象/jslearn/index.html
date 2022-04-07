@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="text" name="username" id="username">
+
+	<p class="area city">广州</p>
+	<p>深圳</p>
+	<p class="area">长沙</p>
+	<p class="area" id="beij">北京</p>
+	<script type="text/javascript">
+		// 根据ID查询
+		var username = document.getElementById('username');
+		console.log(username);
+		// 根据class查询
+		var areaList = document.getElementsByClassName('area');
+		console.log(areaList);
+		// 根据标签查询
+		var pList = document.getElementsByTagName('p');
+		console.log(pList);
+
+		// 自己实现iQuery中的ID选择器
+		var $ = function(id) {
+			return document.getElementById(id)
+		}
+
+		// function $(id) {
+		// 	return document.getElementById(id)
+		// }
+
+		console.log($('username'))
+		console.log($('beij'))
+	</script>
+</body>
+</html>

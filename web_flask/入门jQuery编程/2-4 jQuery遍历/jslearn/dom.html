@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DOM查询</title>
+	<link rel="stylesheet" href="">
+	<script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<input type="text" name="username" id="username" class="input-text user-input" my-user='张三'
+		value="我的用户名">
+		<!-- textarea  select checkbox radio -->
+	<input type="text" name="password">
+
+	<p class="area city">广州</p>
+	<p style="color:#f00;">深圳</p>
+	<p class="area">长沙 <span>测试数据</span></p>
+	<p class="area" id="beij">北京</p>
+
+	<p class="info" id="info" style="display: none;">
+		查看详细
+		<span>内容：</span>
+		<small>文字描述</small>
+	</p>
+	<script>
+		$(function() {
+			var pList = $('p');
+			// // 第一个p元素
+			// var p1 = pList.get(0);
+			// console.log(p1);
+			// var p3 = pList.get(2);
+			// console.log(p3);
+
+
+			console.log(pList);
+			console.log('总共有几个：', pList.length);
+			// for 循环遍历
+			for (var i=0; i<pList.length; i++) {
+				var item = pList[i];
+				console.log(item)
+			}
+			// .each函数循环遍历
+			console.log('---------------------')
+			pList.each(function(index, value) {
+				console.log(index, value)
+			});
+
+			console.log('--------------');  // json对象数组[{username: },{},]
+			$.each(['a', 'bbb', 'ccc'], function(index, value) {
+				console.log(index, value)
+			})
+
+			// .find的使用
+			var list = pList.find('span');
+			console.log(list)
+
+			// 构建dom对象
+			var htmlDom = $('<p class="test"/>');
+			console.log(htmlDom)
+			// 添加到html dom
+			// htmlDom.appendTo('body');
+
+			// $('body').append(htmlDom);
+
+
+			// 在dom中添加内容
+			// htmlDom.html('<span>我是新加的</span>');
+			// $('body').append(htmlDom);
+
+			// $('#beij').html('<span>我是新加的</span>');
+			// .text() .val()
+
+			// $('#beij').attr('class', '666');
+			// 添加新的class
+			$('#beij').addClass('666');
+			// 移除class
+			$('#beij').removeClass('area');
+
+			// 操作css样式
+			$('#beij').css({
+				'color': '#0f0',
+				'background-color': '#000'
+			})
+
+			// 隐藏元素
+			// $('#info').hide();
+			// 显示元素
+			$('#info').show();
+
+
+			// jQuery的链式调用
+			var myDom = $('<p/>').text('你好').append('<span>，财主</span>').appendTo('body');
+			// console.log(myDom)
+		})
+	</script>
+</body>
+</html>

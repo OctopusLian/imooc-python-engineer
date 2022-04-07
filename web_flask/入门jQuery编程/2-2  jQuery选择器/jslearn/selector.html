@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery选择器的练习</title>
+	<link rel="stylesheet" href="">
+	<script src="./js/jquery-3.4.1.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// jQuery代码的内容
+		// $(document).ready(function() {
+		// 	// 根据ID
+		// 	var username = $('#username');
+		// 	// var username = jQuery('#username');
+		// 	console.log(username);
+
+		// 	// 根据class来查询
+		// 	var areaList = jQuery('.area');
+		// 	console.log(areaList);
+
+		// 	// 根据元素标签来查询
+		// 	var pList = $('p');
+		// 	console.log(pList)
+		// });
+
+		// $(function() {
+		jQuery(function() {
+			// 根据ID
+			var username = $('#username');
+			// var username = jQuery('#username');
+			console.log(username);
+
+			// 根据class来查询
+			var areaList = jQuery('.area');
+			console.log(areaList);
+
+			// 根据元素标签来查询
+			var pList = $('p');
+			console.log(pList)
+
+			// 层级选择器
+			// var bodyList = $('body *');
+			// 所有的后代元素p
+			var bodyList = $('body p');
+			console.log(bodyList);
+
+			// 直接的子元素
+			bodyList = $('body > p');
+			console.log(bodyList);
+
+			// 紧贴之后的元素
+			var input = $('label + input');
+			console.log(input)
+
+			// 伪类选择器练习
+			var pFirst = $('p:first');
+			console.log(pFirst)
+
+			var p2  = $('p:eq(1)');
+			console.log(p2);
+
+			// 属性选择器
+			var password = $('input[name="password"]');
+			// var password = $('input[name^="passw"]');
+			console.log(password)
+
+			var idInputList = $('input[id]');
+			console.log(idInputList)
+		})
+
+	</script>
+</head>
+<body>
+	<label for="username">用户名</label>
+	<input type="text" name="username" id="username">
+	<input type="password" name="password" >
+
+	<p class="area city">广州</p>
+	<p>深圳</p>
+	<p class="area">长沙</p>
+	<p class="area" id="beij">北京</p>
+
+	<div>
+		<p>海南</p>
+	</div>
+	
+</body>
+</html>

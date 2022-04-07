@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>查询DOM信息</title>
+	<link rel="stylesheet" href="">
+	<script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<input type="text" name="username" id="username" class="input-text user-input" my-user='张三'
+		value="我的用户名">
+		<!-- textarea  select checkbox radio -->
+	<input type="text" name="password">
+
+	<p class="area city">广州</p>
+	<p style="color:#f00;">深圳</p>
+	<p class="area">长沙</p>
+	<p class="area" id="beij">北京</p>
+
+	<p class="info" id="info">
+		查看详细
+		<span>内容：</span>
+		<small>文字描述</small>
+	</p>
+	<script>
+		$(document).ready(function() {
+			// class属性
+			var cls = $('#username').attr('class');
+			console.log('class:', cls)
+			// type属性
+			var tys = $('#username').attr('type');
+			console.log('type:', tys);
+			// 自定义属性
+			var user = $('#username').attr('my-user');
+			console.log('my-user:', user);
+
+			// 查询html信息
+			var htmlContent = $('#info').html();
+			console.log('Html:', htmlContent);
+			// 查询text信息
+			var textContent = $('#info').text();
+			console.log('Text:', textContent);
+
+			var inputUsername = $('#username').val();
+			console.log('inputUsername:', inputUsername);
+
+			// jQuery对象转换成DOM对象
+			var username = $('#username');
+			console.log('username jquery', username);
+			// dom对象
+			console.log('username dom', username.get()[0].value);
+		})
+	</script>
+</body>
+</html>
