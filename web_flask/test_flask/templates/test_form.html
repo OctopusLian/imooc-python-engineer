@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单知识点回顾</title>
+</head>
+<body>
+<form action="/index" method="post" enctype="multipart/form-data">
+    <ul>
+        <li>
+            用户地址：
+            <textarea name="" id="" cols="30" rows="10" placeholder="请输入地址"></textarea>
+        </li>
+        <li>
+            用户名：
+            <input type="text" placeholder="请输入用户名">
+        </li>
+        <li>
+            密码：
+            <input type="password" placeholder="请输入密码">
+        </li>
+        <li>
+            用户的年龄：
+            <input type="number">
+        </li>
+        <li>
+            性别：
+            <label><input type="radio" value="男" name="sex">男</label>
+            <label><input type="radio" value="女" name="sex">女</label>
+        </li>
+        <li>
+            爱好
+            <input id="id-paly-ball" type="checkbox" value="打球">
+            <label for="id-paly-ball">打球</label>
+            <input id="id-paly" type="checkbox" value="玩耍">
+            <label for="id-paly">玩耍</label>
+        </li>
+    </ul>
+</form>
+</body>
+</html>

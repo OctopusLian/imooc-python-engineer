@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WTF 文件上传</title>
+</head>
+<body>
+<form action="/avatar/upload" method="post" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    <p>
+        {{ form.avatar.label }}
+        {{ form.avatar }}
+    </p>
+    <p>
+        <input type="submit" value="开始上传">
+    </p>
+</form>
+</body>
+</html>
