@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>分页-使用分页器</title>
+</head>
+<body>
+  <h3>分页-使用分页器</h3>
+  <p>统计：总共{{ page_data.paginator.num_pages }}页， 当前第 {{ page_data.number }} 页</p>
+{% for user in page_data.object_list %}
+  <p>{{ user.id }}: {{ user.username }}</p>
+{% endfor %}
+
+
+</body>
+</html>

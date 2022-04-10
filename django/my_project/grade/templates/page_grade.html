@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>聚合与统计</title>
+</head>
+<body>
+  <h3>练习1：求某个学生期末成绩的总和</h3>
+  <p>张三的期末成绩总分: {{ student.total_score }}</p>
+  <h3>练习2：求某一科目成绩的最高分/最低分</h3>
+  <p>语文最高分： {{ subject.max }}</p>
+  <p>语文最低分： {{ subject.min }}</p>
+  <h3>练习3：求某一科目成绩的平均分</h3>
+  <p>语文平均分： {{ subject.avg }}</p>
+  <h3>练习4：求每个学生期末成绩的总和</h3>
+{% for stu in stu_list %}
+  <p>{{ stu.name }}: {{ stu.total }}</p>
+{% endfor %}
+</body>
+</html>
